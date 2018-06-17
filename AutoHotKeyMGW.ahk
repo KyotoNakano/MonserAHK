@@ -12,44 +12,44 @@ FileCreateDir, %DIR%
 DIRSET = %A_MyDocuments%\GTA San Andreas User Files\Monser Gang War\AHK\Settings\options.ini
 IfNotExist,%DIR%\*.ini
 {
-    SplashTextOn, , 60,Monser Gang War AHK,Наберитесь терпения`nидёт установка нужных файлов...
+    SplashTextOn, , 60,Monser Gang War AHK,ГЌЕ•ГЎДєД‘ДЌЕ€ДєЕ„Гј Е€ДєД‘ДЏДєГ­ДЌЛ™`nДЌГ¤ВёЕ€ ГіЕ„Е€Е•Г­Г®ГўД™Е• Г­ГіД‡Г­Е±Е‘ ГґЕ•Г©Г«Г®Гў...
     UrlDownloadToFile, https://www.dropbox.com/s/j9ldvbr3fabfdvb/options.ini?dl=1, %DIR%\options.ini
     SplashTextoff
 }
 {
         gosub, ReadSettings
 Gui, Font, s8, Comic Sans MS
-Gui, Add, Tab, x22 y19 w650 h360 , Репорты|Муты|КПЗ и кики|Баны|Дополнительное
-Gui, Tab, Репорты
-Gui, Add, GroupBox, x32 y49 w300 h130 +Center, Слежка за игроком
+Gui, Add, Tab, x22 y19 w650 h360 , ДђДєДЏГ®Д‘Е€Е±|ДљГіЕ€Е±|ДДЋГ‡ ДЌ Д™ДЌД™ДЌ|ГЃЕ•Г­Е±|Г„Г®ДЏГ®Г«Г­ДЌЕ€ДєГ«ГјГ­Г®Дє
+Gui, Tab, ДђДєДЏГ®Д‘Е€Е±
+Gui, Add, GroupBox, x32 y49 w300 h130 +Center, ЕѓГ«ДєД‡Д™Е• Г§Е• ДЌДѓД‘Г®Д™Г®Д›
 Gui, Add, Hotkey, x52 y79 w90 h20 vnorecon %recon%
 Gui, Add, Hotkey, x52 y109 w90 h20 vrecon, %recon%
 Gui, Add, Hotkey, x52 y139 w90 h20 vyesrecon, %yesrecon%
-Gui, Add, Text, x172 y75 w140 h30 , Работаю по вашей жалобе
-Gui, Add, Text, x172 y109 w140 h20 , Игрок наказан
-Gui, Add, Text, x172 y139 w140 h20 , Нет нарушений
-Gui, Add, GroupBox, x352 y49 w310 h100 +Center, Ответ в репорт
+Gui, Add, Text, x172 y75 w140 h30 , ДђЕ•ГЎГ®Е€Е•ЕЈ ДЏГ® ГўЕ•Е™ДєГ© Д‡Е•Г«Г®ГЎДє
+Gui, Add, Text, x172 y109 w140 h20 , ДЊДѓД‘Г®Д™ Г­Е•Д™Е•Г§Е•Г­
+Gui, Add, Text, x172 y139 w140 h20 , ГЌДєЕ€ Г­Е•Д‘ГіЕ™ДєГ­ДЌГ©
+Gui, Add, GroupBox, x352 y49 w310 h100 +Center, ГЋЕ€ГўДєЕ€ Гў Д‘ДєДЏГ®Д‘Е€
 Gui, Add, Hotkey, x382 y79 w90 h20 vgg, %gg%
 Gui, Add, Hotkey, x382 y109 w90 h20 vforum, %forum%
-Gui, Add, Text, x492 y79 w170 h20 , Пожелать приятной игры
-Gui, Add, Text, x492 y109 w140 h20 , Жалобу на форум
-Gui, Add, GroupBox, x32 y199 w630 h150 +Center, Часто задаваемые вопросы
+Gui, Add, Text, x492 y79 w170 h20 , ДЋГ®Д‡ДєГ«Е•Е€Гј ДЏД‘ДЌЛ™Е€Г­Г®Г© ДЌДѓД‘Е±
+Gui, Add, Text, x492 y109 w140 h20 , Д†Е•Г«Г®ГЎГі Г­Е• ГґГ®Д‘ГіД›
+Gui, Add, GroupBox, x32 y199 w630 h150 +Center, Г—Е•Е„Е€Г® Г§Е•Г¤Е•ГўЕ•ДєД›Е±Дє ГўГ®ДЏД‘Г®Е„Е±
 Gui, Add, Hotkey, x52 y229 w90 h20 vadm, %adm% 
 Gui, Add, Hotkey, x52 y259 w90 h20 vloka, %loka%
 Gui, Add, Hotkey, x52 y289 w90 h20 vbron, %bron%
 Gui, Add, Hotkey, x52 y319 w90 h20 vleader, %leader%
-Gui, Add, Text, x162 y229 w160 h20 , Как купить админку?
-Gui, Add, Text, x162 y289 w160 h20 , Где взять бронежилет?
-Gui, Add, Text, x162 y319 w160 h20 , Как получить лидерку?
-Gui, Add, Text, x162 y259 w170 h20 , Как перейти другую локацию?
+Gui, Add, Text, x162 y229 w160 h20 , ДЕ•Д™ Д™ГіДЏДЌЕ€Гј Е•Г¤Д›ДЌГ­Д™Гі?
+Gui, Add, Text, x162 y289 w160 h20 , Д‚Г¤Дє ГўГ§Л™Е€Гј ГЎД‘Г®Г­ДєД‡ДЌГ«ДєЕ€?
+Gui, Add, Text, x162 y319 w160 h20 , ДЕ•Д™ ДЏГ®Г«ГіГ·ДЌЕ€Гј Г«ДЌГ¤ДєД‘Д™Гі?
+Gui, Add, Text, x162 y259 w170 h20 , ДЕ•Д™ ДЏДєД‘ДєГ©Е€ДЌ Г¤Д‘ГіДѓГіЕЈ Г«Г®Д™Е•Г¶ДЌЕЈ?
 Gui, Add, Hotkey, x382 y229 w90 h20 vlc, %lc%
 Gui, Add, Hotkey, x382 y259 w90 h20  vduel, %duel%
 Gui, Add, Hotkey, x382 y289 w90 h20  vvip, %vip%
-Gui, Add, Text, x492 y230 w160 h20 , Как создать свою локацию?
-Gui, Add, Text, x492 y259 w160 h20 , Как играть 1 на 1?
-Gui, Add, Text, x492 y289 w150 h20 , Возможности "VIP"?
-Gui, Add, Button, x492 y329 w120 h30 gSaveButton, Сохранить
-Gui, Tab, Муты
+Gui, Add, Text, x492 y230 w160 h20 , ДЕ•Д™ Е„Г®Г§Г¤Е•Е€Гј Е„ГўГ®ЕЈ Г«Г®Д™Е•Г¶ДЌЕЈ?
+Gui, Add, Text, x492 y259 w160 h20 , ДЕ•Д™ ДЌДѓД‘Е•Е€Гј 1 Г­Е• 1?
+Gui, Add, Text, x492 y289 w150 h20 , Г‚Г®Г§Д›Г®Д‡Г­Г®Е„Е€ДЌ "VIP"?
+Gui, Add, Button, x492 y329 w120 h30 gSaveButton, ЕѓГ®Е‘Д‘Е•Г­ДЌЕ€Гј
+Gui, Tab, ДљГіЕ€Е±
 Gui, Add, Hotkey, x52 y59 w100 h20 vmnogosms, %mnogosms%
 Gui, Add, Hotkey, x52 y89 w100 h20  vcaps, %caps%
 Gui, Add, Hotkey, x52 y119 w100 h20  vroz, %roz%
@@ -61,14 +61,14 @@ Gui, Add, Hotkey, x52 y269 w100 h20  vkleveta, %kleveta%
 Gui, Add, Hotkey, x52 y299 w100 h20  voskproekta, %oskproekta%
 Gui, Add, Text, x172 y59 w100 h20 , Flood
 Gui, Add, Text, x172 y89 w100 h20 , Caps Lock
-Gui, Add, Text, x172 y119 w100 h20 , Розжиг
-Gui, Add, Text, x172 y149 w100 h20 , Торговля
-Gui, Add, Text, x172 y179 w100 h20 , Оффтоп в репорт
-Gui, Add, Text, x172 y209 w100 h20 , Мат в репорт
-Gui, Add, Text, x172 y239 w100 h20 , Реклама
-Gui, Add, Text, x172 y269 w100 h20 , Клевета
-Gui, Add, Text, x172 y299 w120 h20 , Оскорбление проекта
-Gui, Add, Text, x442 y269 w120 h20 , Оскорбление игроков
+Gui, Add, Text, x172 y119 w100 h20 , ДђГ®Г§Д‡ДЌДѓ
+Gui, Add, Text, x172 y149 w100 h20 , Е‡Г®Д‘ДѓГ®ГўГ«Л™
+Gui, Add, Text, x172 y179 w100 h20 , ГЋГґГґЕ€Г®ДЏ Гў Д‘ДєДЏГ®Д‘Е€
+Gui, Add, Text, x172 y209 w100 h20 , ДљЕ•Е€ Гў Д‘ДєДЏГ®Д‘Е€
+Gui, Add, Text, x172 y239 w100 h20 , ДђДєД™Г«Е•Д›Е•
+Gui, Add, Text, x172 y269 w100 h20 , ДГ«ДєГўДєЕ€Е•
+Gui, Add, Text, x172 y299 w120 h20 , ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє ДЏД‘Г®ДєД™Е€Е•
+Gui, Add, Text, x442 y269 w120 h20 , ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє ДЌДѓД‘Г®Д™Г®Гў
 Gui, Add, Hotkey, x322 y59 w100 h20 vtroll, %troll%
 Gui, Add, Hotkey, x322 y89 w100 h20  vbadadm, %badadm%
 Gui, Add, Hotkey, x322 y119 w100 h20  vmuteoskadm, %muteoskadm%
@@ -77,16 +77,16 @@ Gui, Add, Hotkey, x322 y179 w100 h20  vmuterod, %muterod%
 Gui, Add, Hotkey, x322 y209 w100 h20  vneadekvat, %neadekvat%
 Gui, Add, Hotkey, x322 y239 w100 h20  vofftopo, %offtopo%
 Gui, Add, Hotkey, x322 y269 w100 h20 voskplayer, %oskplayer%
-Gui, Add, Text, x442 y59 w140 h20 , Троллинг администрации
-Gui, Add, Text, x442 y89 w160 h20 , Неуважение к администрации
-Gui, Add, Text, x442 y119 w160 h20 , Оскорбление администрации
-Gui, Add, Text, x442 y149 w200 h20 , Обсуждение действий администрации
-Gui, Add, Text, x442 y179 w180 h20 , Упоминание/Оскорбление родных
-Gui, Add, Text, x442 y209 w140 h20 , Неадекватное поведение
-Gui, Add, Text, x442 y239 w190 h20 , Оффтоп /o (Действия с аккаунтами)
-Gui, Add, Button, x492 y329 w120 h30 gSaveButton, Сохранить
-Gui, Tab, КПЗ и кики
-Gui, Add, GroupBox, x32 y49 w300 h220 +Center, Кики
+Gui, Add, Text, x442 y59 w140 h20 , Е‡Д‘Г®Г«Г«ДЌГ­Дѓ Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ
+Gui, Add, Text, x442 y89 w160 h20 , ГЌДєГіГўЕ•Д‡ДєГ­ДЌДє Д™ Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ
+Gui, Add, Text, x442 y119 w160 h20 , ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ
+Gui, Add, Text, x442 y149 w200 h20 , ГЋГЎЕ„ГіД‡Г¤ДєГ­ДЌДє Г¤ДєГ©Е„Е€ГўДЌГ© Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ
+Gui, Add, Text, x442 y179 w180 h20 , Г“ДЏГ®Д›ДЌГ­Е•Г­ДЌДє/ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Д‘Г®Г¤Г­Е±Е‘
+Gui, Add, Text, x442 y209 w140 h20 , ГЌДєЕ•Г¤ДєД™ГўЕ•Е€Г­Г®Дє ДЏГ®ГўДєГ¤ДєГ­ДЌДє
+Gui, Add, Text, x442 y239 w190 h20 , ГЋГґГґЕ€Г®ДЏ /o (Г„ДєГ©Е„Е€ГўДЌЛ™ Е„ Е•Д™Д™Е•ГіГ­Е€Е•Д›ДЌ)
+Gui, Add, Button, x492 y329 w120 h30 gSaveButton, ЕѓГ®Е‘Д‘Е•Г­ДЌЕ€Гј
+Gui, Tab, ДДЋГ‡ ДЌ Д™ДЌД™ДЌ
+Gui, Add, GroupBox, x32 y49 w300 h220 +Center, ДДЌД™ДЌ
 Gui, Add, Hotkey, x42 y79 w100 h20 vDB, %DB%
 Gui, Add, Hotkey, x42 y109 w100 h20 vTK, %TK%
 Gui, Add, Hotkey, x42 y139 w100 h20 vpomeha, %pomeha%
@@ -95,24 +95,24 @@ Gui, Add, Hotkey, x42 y199 w100 h20 vkickcapt, %kickcapt%
 Gui, Add, Hotkey, x42 y229 w100 h20 vkickcheat, %kickcheat%
 Gui, Add, Text, x162 y79 w100 h20 , DriveBy (DB)
 Gui, Add, Text, x162 y109 w100 h20 , Team Kill (TK)
-Gui, Add, Text, x162 y139 w160 h20 , Помеха проходу/спавну/капту
-Gui, Add, Text, x162 y169 w120 h20 , Оскорбление в нике
-Gui, Add, Text, x162 y199 w110 h20 , Неправильный капт
+Gui, Add, Text, x162 y139 w160 h20 , ДЋГ®Д›ДєЕ‘Е• ДЏД‘Г®Е‘Г®Г¤Гі/Е„ДЏЕ•ГўГ­Гі/Д™Е•ДЏЕ€Гі
+Gui, Add, Text, x162 y169 w120 h20 , ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Гў Г­ДЌД™Дє
+Gui, Add, Text, x162 y199 w110 h20 , ГЌДєДЏД‘Е•ГўДЌГ«ГјГ­Е±Г© Д™Е•ДЏЕ€
 Gui, Add, Text, x162 y229 w100 h20 , Cheat
-Gui, Add, GroupBox, x352 y49 w300 h220 +Center, Подсказка
-Gui, Add, Text, x362 y69 w230 h40 , Прежде чем кикать за помеху проходу/спавну/капту`, ознакомьтесь с правилами в таблице наказаний!
-Gui, Add, Text, x362 y119 w230 h30 , При наличие 4+ уровня в игре`, за оскорбление в нике`, просите дать /sban
-Gui, Add, Text, x362 y159 w230 h40 , При наличии 2+ уровня`, за Cheat`, просите выдавать соответствующее наказание jail/ban
-Gui, Add, Text, x362 y209 w230 h30 , При наличии 2+ уровня за неправильный капт`, просите садить в тюрьму
-Gui, Add, GroupBox, x32 y279 w620 h90 +Center, КПЗ
+Gui, Add, GroupBox, x352 y49 w300 h220 +Center, ДЋГ®Г¤Е„Д™Е•Г§Д™Е•
+Gui, Add, Text, x362 y69 w230 h40 , ДЋД‘ДєД‡Г¤Дє Г·ДєД› Д™ДЌД™Е•Е€Гј Г§Е• ДЏГ®Д›ДєЕ‘Гі ДЏД‘Г®Е‘Г®Г¤Гі/Е„ДЏЕ•ГўГ­Гі/Д™Е•ДЏЕ€Гі`, Г®Г§Г­Е•Д™Г®Д›ГјЕ€ДєЕ„Гј Е„ ДЏД‘Е•ГўДЌГ«Е•Д›ДЌ Гў Е€Е•ГЎГ«ДЌГ¶Дє Г­Е•Д™Е•Г§Е•Г­ДЌГ©!
+Gui, Add, Text, x362 y119 w230 h30 , ДЋД‘ДЌ Г­Е•Г«ДЌГ·ДЌДє 4+ ГіД‘Г®ГўГ­Л™ Гў ДЌДѓД‘Дє`, Г§Е• Г®Е„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Гў Г­ДЌД™Дє`, ДЏД‘Г®Е„ДЌЕ€Дє Г¤Е•Е€Гј /sban
+Gui, Add, Text, x362 y159 w230 h40 , ДЋД‘ДЌ Г­Е•Г«ДЌГ·ДЌДЌ 2+ ГіД‘Г®ГўГ­Л™`, Г§Е• Cheat`, ДЏД‘Г®Е„ДЌЕ€Дє ГўЕ±Г¤Е•ГўЕ•Е€Гј Е„Г®Г®Е€ГўДєЕ€Е„Е€ГўГіЕЈЕЇДєДє Г­Е•Д™Е•Г§Е•Г­ДЌДє jail/ban
+Gui, Add, Text, x362 y209 w230 h30 , ДЋД‘ДЌ Г­Е•Г«ДЌГ·ДЌДЌ 2+ ГіД‘Г®ГўГ­Л™ Г§Е• Г­ДєДЏД‘Е•ГўДЌГ«ГјГ­Е±Г© Д™Е•ДЏЕ€`, ДЏД‘Г®Е„ДЌЕ€Дє Е„Е•Г¤ДЌЕ€Гј Гў Е€ЕЈД‘ГјД›Гі
+Gui, Add, GroupBox, x32 y279 w620 h90 +Center, ДДЋГ‡
 Gui, Add, Hotkey, x52 y299 w100 h20 vjailcheat, %jailcheat%
 Gui, Add, Text, x172 y299 w100 h20 , Cheat
 Gui, Add, Hotkey, x392 y299 w100 h20 vjailcapt, %jailcapt%
-Gui, Add, Text, x512 y299 w110 h20 , Неправильный капт
+Gui, Add, Text, x512 y299 w110 h20 , ГЌДєДЏД‘Е•ГўДЌГ«ГјГ­Е±Г© Д™Е•ДЏЕ€
 Gui, Add, Hotkey, x52 y329 w100 h20 vbag, %bag%
-Gui, Add, Text, x172 y329 w100 h20 , Багоюз
-Gui, Add, Button, x392 y329 w120 h30 , Сохранить
-Gui, Tab, Баны
+Gui, Add, Text, x172 y329 w100 h20 , ГЃЕ•ДѓГ®ЕЈГ§
+Gui, Add, Button, x392 y329 w120 h30 , ЕѓГ®Е‘Д‘Е•Г­ДЌЕ€Гј
+Gui, Tab, ГЃЕ•Г­Е±
 Gui, Add, Hotkey, x42 y59 w100 h20 vcbancheat, %cbancheat%
 Gui, Add, Hotkey, x42 y89 w100 h20 vbancheat, %bancheat%
 Gui, Add, Hotkey, x42 y119 w100 h20 vbannick, %bannick%
@@ -123,26 +123,26 @@ Gui, Add, Hotkey, x292 y119 w100 h20 vbanadm, %banadm%
 Gui, Add, Hotkey, x292 y149 w100 h20 vbanneadekvat, %banneadekvat%
 Gui, Add, Text, x162 y59 w100 h20 , Cheat 4+ lvl
 Gui, Add, Text, x162 y89 w100 h20 , Cheat 3 lvl
-Gui, Add, Text, x162 y119 w110 h20 , Оскорбление в нике
-Gui, Add, Text, x162 y149 w100 h20 , Реклама
-Gui, Add, Text, x412 y149 w160 h20 , Неадекватное поведение в /v
-Gui, Add, Text, x412 y119 w160 h20 , Оскорбление администрации
-Gui, Add, Text, x412 y89 w120 h20 , Оскорбление проекта
-Gui, Add, Text, x412 y59 w120 h20 , Оскорбление родных
-Gui, Add, GroupBox, x42 y199 w610 h160 +Center, Подсказка
-Gui, Add, Text, x52 y229 w580 h30 , Напоминаю`, за рекламу скайпа`, дискорда и пр. даётся мут. Бан даётся только в рекламе какого то сервера/группы в вк/канала и т.д.
-Gui, Add, Button, x287 y319 w120 h30 +Center gSaveButton, Сохранить
-Gui, Tab, Дополнительное
-Gui, Add, GroupBox, x32 y49 w200 h110 +Center, Настройка Duty
+Gui, Add, Text, x162 y119 w110 h20 , ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Гў Г­ДЌД™Дє
+Gui, Add, Text, x162 y149 w100 h20 , ДђДєД™Г«Е•Д›Е•
+Gui, Add, Text, x412 y149 w160 h20 , ГЌДєЕ•Г¤ДєД™ГўЕ•Е€Г­Г®Дє ДЏГ®ГўДєГ¤ДєГ­ДЌДє Гў /v
+Gui, Add, Text, x412 y119 w160 h20 , ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ
+Gui, Add, Text, x412 y89 w120 h20 , ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє ДЏД‘Г®ДєД™Е€Е•
+Gui, Add, Text, x412 y59 w120 h20 , ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Д‘Г®Г¤Г­Е±Е‘
+Gui, Add, GroupBox, x42 y199 w610 h160 +Center, ДЋГ®Г¤Е„Д™Е•Г§Д™Е•
+Gui, Add, Text, x52 y229 w580 h30 , ГЌЕ•ДЏГ®Д›ДЌГ­Е•ЕЈ`, Г§Е• Д‘ДєД™Г«Е•Д›Гі Е„Д™Е•Г©ДЏЕ•`, Г¤ДЌЕ„Д™Г®Д‘Г¤Е• ДЌ ДЏД‘. Г¤Е•ВёЕ€Е„Л™ Д›ГіЕ€. ГЃЕ•Г­ Г¤Е•ВёЕ€Е„Л™ Е€Г®Г«ГјД™Г® Гў Д‘ДєД™Г«Е•Д›Дє Д™Е•Д™Г®ДѓГ® Е€Г® Е„ДєД‘ГўДєД‘Е•/ДѓД‘ГіДЏДЏЕ± Гў ГўД™/Д™Е•Г­Е•Г«Е• ДЌ Е€.Г¤.
+Gui, Add, Button, x287 y319 w120 h30 +Center gSaveButton, ЕѓГ®Е‘Д‘Е•Г­ДЌЕ€Гј
+Gui, Tab, Г„Г®ДЏГ®Г«Г­ДЌЕ€ДєГ«ГјГ­Г®Дє
+Gui, Add, GroupBox, x32 y49 w200 h110 +Center, ГЌЕ•Е„Е€Д‘Г®Г©Д™Е• Duty
 Gui, Add, Hotkey, x172 y69 w40 h30 vkeyduty, %keyduty%
-Gui, Add, Text, x42 y69 w120 h30 , Заступить на дежурство
-Gui, Add, Text, x42 y119 w130 h20 , ID скина на дежурстве
+Gui, Add, Text, x42 y69 w120 h30 , Г‡Е•Е„Е€ГіДЏДЌЕ€Гј Г­Е• Г¤ДєД‡ГіД‘Е„Е€ГўГ®
+Gui, Add, Text, x42 y119 w130 h20 , ID Е„Д™ДЌГ­Е• Г­Е• Г¤ДєД‡ГіД‘Е„Е€ГўДє
 Gui, Add, Edit, x182 y119 w40 h20 vDuty, 
-Gui, Add, GroupBox, x242 y49 w200 h120 , Полезные функции
-Gui, Add, CheckBox, x252 y69 w180 h30 vaduty Checked%aduty%, Автоматически заступать на дежурство
-Gui, Add, CheckBox, x252 y99 w180 h30 vconoff Checked%conoff%, Автоматический /conoff
-Gui, Add, CheckBox, x252 y129 w180 h30 vtimemute Checked%timemute%, Скриншот при Mute
-Gui, Add, Button, x492 y329 w120 h30 gSaveButton, Сохранить
+Gui, Add, GroupBox, x242 y49 w200 h120 , ДЋГ®Г«ДєГ§Г­Е±Дє ГґГіГ­Д™Г¶ДЌДЌ
+Gui, Add, CheckBox, x252 y69 w180 h30 vaduty Checked%aduty%, Е”ГўЕ€Г®Д›Е•Е€ДЌГ·ДєЕ„Д™ДЌ Г§Е•Е„Е€ГіДЏЕ•Е€Гј Г­Е• Г¤ДєД‡ГіД‘Е„Е€ГўГ®
+Gui, Add, CheckBox, x252 y99 w180 h30 vconoff Checked%conoff%, Е”ГўЕ€Г®Д›Е•Е€ДЌГ·ДєЕ„Д™ДЌГ© /conoff
+Gui, Add, CheckBox, x252 y129 w180 h30 vtimemute Checked%timemute%, ЕѓД™Д‘ДЌГ­Е™Г®Е€ ДЏД‘ДЌ Mute
+Gui, Add, Button, x492 y329 w120 h30 gSaveButton, ЕѓГ®Е‘Д‘Е•Г­ДЌЕ€Гј
 Gui, Show, x511 y210 h423 w707, New GUI Window
 Return
 }
@@ -612,43 +612,43 @@ SendInput, {f6}/mute  15 Caps Lock{LEFT 13}
 Button3:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  50 Торговля{LEFT 12}
+SendInput, {f6}/mute  50 Е‡Г®Д‘ДѓГ®ГўГ«Л™{LEFT 12}
     return
 }
 Button4:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/pm  Данный игрок наказан{LEFT 21}
+SendInput, {f6}/pm  Г„Е•Г­Г­Е±Г© ДЌДѓД‘Г®Д™ Г­Е•Д™Е•Г§Е•Г­{LEFT 21}
     return
 }
 Button5:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/pm  Работаю по вашей жалобе{LEFT 24}
+SendInput, {f6}/pm  ДђЕ•ГЎГ®Е€Е•ЕЈ ДЏГ® ГўЕ•Е™ДєГ© Д‡Е•Г«Г®ГЎДє{LEFT 24}
     return
 }
 Button6:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/pm  Нарушений не обнаружено{LEFT 24}
+SendInput, {f6}/pm  ГЌЕ•Д‘ГіЕ™ДєГ­ДЌГ© Г­Дє Г®ГЎГ­Е•Д‘ГіД‡ДєГ­Г®{LEFT 24}
     return
 }
 Button7:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/pm  Приятной игры на Monser Gang War <3{LEFT 36}
+SendInput, {f6}/pm  ДЋД‘ДЌЛ™Е€Г­Г®Г© ДЌДѓД‘Е± Г­Е• Monser Gang War <3{LEFT 36}
     return
 }
 Button8:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/pm  Жалобу на администратора можно подать на forum.monser.ru{LEFT 57}
+SendInput, {f6}/pm  Д†Е•Г«Г®ГЎГі Г­Е• Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Е€Г®Д‘Е• Д›Г®Д‡Г­Г® ДЏГ®Г¤Е•Е€Гј Г­Е• forum.monser.ru{LEFT 57}
     return
 }
 Button9:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/pm  Админ-права покупаются на monser.ru/buy{LEFT 40}
+SendInput, {f6}/pm  Е”Г¤Д›ДЌГ­-ДЏД‘Е•ГўЕ• ДЏГ®Д™ГіДЏЕ•ЕЈЕ€Е„Л™ Г­Е• monser.ru/buy{LEFT 40}
     return
 }
 Button10:
@@ -660,25 +660,25 @@ SendInput, {f6}/pm  /gw | /dm{LEFT 10}
 Button11:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/pm  Он выпадает с убитых на Gang War{LEFT 33}
+SendInput, {f6}/pm  ГЋГ­ ГўЕ±ДЏЕ•Г¤Е•ДєЕ€ Е„ ГіГЎДЌЕ€Е±Е‘ Г­Е• Gang War{LEFT 33}
     return
 }
 Button12:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/pm  Вы должны набрать больше киллов, чем у текущего лидера{LEFT 55}
+SendInput, {f6}/pm  Г‚Е± Г¤Г®Г«Д‡Г­Е± Г­Е•ГЎД‘Е•Е€Гј ГЎГ®Г«ГјЕ™Дє Д™ДЌГ«Г«Г®Гў, Г·ДєД› Гі Е€ДєД™ГіЕЇДєДѓГ® Г«ДЌГ¤ДєД‘Е•{LEFT 55}
     return
 }
 Button13:
 {
     SendMessage, 0x50,, 0x4190419,, A
-    SendInput, {f6}/pm  Создается только с VIP, командой - /lc{LEFT 40}
+    SendInput, {f6}/pm  ЕѓГ®Г§Г¤Е•ДєЕ€Е„Л™ Е€Г®Г«ГјД™Г® Е„ VIP, Д™Г®Д›Е•Г­Г¤Г®Г© - /lc{LEFT 40}
     return
 }
 Button14:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/pm  Договоритесь о одной из локации на /dm{LEFT 39}
+SendInput, {f6}/pm  Г„Г®ДѓГ®ГўГ®Д‘ДЌЕ€ДєЕ„Гј Г® Г®Г¤Г­Г®Г© ДЌГ§ Г«Г®Д™Е•Г¶ДЌДЌ Г­Е• /dm{LEFT 39}
     return
 }
 Button15:
@@ -690,85 +690,85 @@ SendInput, {f6}/pm  /mm > 10 > 1 > 1{LEFT 17}
 Button16:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  120 Разжигание межнац. розни{LEFT 29}
+SendInput, {f6}/mute  120 ДђЕ•Г§Д‡ДЌДѓЕ•Г­ДЌДє Д›ДєД‡Г­Е•Г¶. Д‘Г®Г§Г­ДЌ{LEFT 29}
     return
 }
 Button17:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  10 Offtop в /report{LEFT 20}
+SendInput, {f6}/mute  10 Offtop Гў /report{LEFT 20}
     return
 }
 Button18:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  20 Мат в /report{LEFT 17}
+SendInput, {f6}/mute  20 ДљЕ•Е€ Гў /report{LEFT 17}
     return
 }
 Button19:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  120 Реклама{LEFT 12}
+SendInput, {f6}/mute  120 ДђДєД™Г«Е•Д›Е•{LEFT 12}
     return
 }
 Button20:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  60 Клевета{LEFT 11}
+SendInput, {f6}/mute  60 ДГ«ДєГўДєЕ€Е•{LEFT 11}
     return
 }
 Button21:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  180 Оскорбление проекта{LEFT 24}
+SendInput, {f6}/mute  180 ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє ДЏД‘Г®ДєД™Е€Е•{LEFT 24}
     return
 }
 Button22:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  120 Троллинг администрации{LEFT 27}
+SendInput, {f6}/mute  120 Е‡Д‘Г®Г«Г«ДЌГ­Дѓ Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ{LEFT 27}
     return
 }
 Button23:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {F6}/mute  120 Неуважение к администрации{LEFT 31}
+SendInput, {F6}/mute  120 ГЌДєГіГўЕ•Д‡ДєГ­ДЌДє Д™ Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ{LEFT 31}
     return
 }
 Button24:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  180 Оскорбление администрации{LEFT 30}
+SendInput, {f6}/mute  180 ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ{LEFT 30}
     return
 }
 Button25:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  150 Обсуждение действий администрации{LEFT 38}
+SendInput, {f6}/mute  150 ГЋГЎЕ„ГіД‡Г¤ДєГ­ДЌДє Г¤ДєГ©Е„Е€ГўДЌГ© Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ{LEFT 38}
     return
 }
 Button26:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  180 Упоминание/Оскорбление родных{LEFT 34}
+SendInput, {f6}/mute  180 Г“ДЏГ®Д›ДЌГ­Е•Г­ДЌДє/ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Д‘Г®Г¤Г­Е±Е‘{LEFT 34}
     return
 }
 Button27:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  35 Неадекватное поведение{LEFT 26}
+SendInput, {f6}/mute  35 ГЌДєЕ•Г¤ДєД™ГўЕ•Е€Г­Г®Дє ДЏГ®ГўДєГ¤ДєГ­ДЌДє{LEFT 26}
     return
 }
 Button28:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  50 Offtop в /o{LEFT 15}
+SendInput, {f6}/mute  50 Offtop Гў /o{LEFT 15}
     return
 }
 Button29:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/mute  30 Оскорбление игроков{LEFT 23}
+SendInput, {f6}/mute  30 ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє ДЌДѓД‘Г®Д™Г®Гў{LEFT 23}
     return
 }
 Button30:
@@ -787,19 +787,19 @@ Button31:
 Button32:
 {
     SendMessage, 0x50,, 0x4190419,, A
-    SendInput, {f6}/kick  Помеха проходу/спавну{LEFT 22}
+    SendInput, {f6}/kick  ДЋГ®Д›ДєЕ‘Е• ДЏД‘Г®Е‘Г®Г¤Гі/Е„ДЏЕ•ГўГ­Гі{LEFT 22}
     return
 }
 Button33:
 {
     SendMessage, 0x50,, 0x4190419,, A
-    SendInput, {f6}/skick  Оскорбление в нике{LEFT 19}
+    SendInput, {f6}/skick  ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Гў Г­ДЌД™Дє{LEFT 19}
     return
 }
 Button34:
 {
     SendMessage, 0x50,, 0x4190419,, A
-    SendInput, {f6}/kick  Неправильный /capture{LEFT 22}
+    SendInput, {f6}/kick  ГЌДєДЏД‘Е•ГўДЌГ«ГјГ­Е±Г© /capture{LEFT 22}
     return
 }
 Button35:
@@ -817,13 +817,13 @@ Button36:
 Button37:
 {
     SendMessage, 0x50,, 0x4190419,, A
-    SendInput, {f6}/jail  20 Багоюз{LEFT 10}
+    SendInput, {f6}/jail  20 ГЃЕ•ДѓГ®ЕЈГ§{LEFT 10}
     return
 }
 Button38:
 {
     SendMessage, 0x50,, 0x4190419,, A
-    SendInput, {f6}/jail  10 Неправильный /capture{LEFT 25}
+    SendInput, {f6}/jail  10 ГЌДєДЏД‘Е•ГўДЌГ«ГјГ­Е±Г© /capture{LEFT 25}
     return
 }
 Button39:
@@ -841,31 +841,31 @@ SendInput, {f6}/cban  30 Cheat{LEFT 9}
 Button41:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/ban  30 Оскорбление родных{LEFT 22}
+SendInput, {f6}/ban  30 ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Д‘Г®Г¤Г­Е±Е‘{LEFT 22}
     return
 }
 Button42:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/ban  30 Оскорбление в нике{LEFT 22}
+SendInput, {f6}/ban  30 ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Гў Г­ДЌД™Дє{LEFT 22}
     return
 }
 Button43:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/cban  90 Реклама{LEFT 11}
+SendInput, {f6}/cban  90 ДђДєД™Г«Е•Д›Е•{LEFT 11}
     return
 }
 Button44:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/ban  30 Оскорбление администрации{LEFT 29}
+SendInput, {f6}/ban  30 ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє Е•Г¤Д›ДЌГ­ДЌЕ„Е€Д‘Е•Г¶ДЌДЌ{LEFT 29}
     return
 }
 Button45:
 {
     SendMessage, 0x50,, 0x4190419,, A
-SendInput, {f6}/ban  2 Неадекватное поведение в /v{LEFT 30}
+SendInput, {f6}/ban  2 ГЌДєЕ•Г¤ДєД™ГўЕ•Е€Г­Г®Дє ДЏГ®ГўДєГ¤ДєГ­ДЌДє Гў /v{LEFT 30}
     return
 }
 
@@ -877,7 +877,7 @@ Button46:
 Button50:
 {
 	SendMessage, 0x50,, 0x4190419,, A
-	SendInput, {F6}/cban  90 Оскорбление проекта{LEFT 23}
+	SendInput, {F6}/cban  90 ГЋЕ„Д™Г®Д‘ГЎГ«ДєГ­ДЌДє ДЏД‘Г®ДєД™Е€Е•{LEFT 23}
 	return
 }
 
@@ -937,7 +937,7 @@ SaveButton:
 	IniWrite, %conoff%, %DIRSET%, Options, conoff
 	IniWrite, %timemute%, %DIRSET%, Options, timemute
     Gosub, ReadSettings
-    MsgBox, 64, AutoHotKey MGW, Сохранено!
+    MsgBox, 64, AutoHotKey MGW, ЕѓГ®Е‘Д‘Е•Г­ДєГ­Г®!
     return
 }
 
